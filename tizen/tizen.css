@@ -1,0 +1,159 @@
+.menu-container{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 0;
+    top: 0;
+}
+
+
+
+img.menu-img {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+div.menu-button {
+    width: 70px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+div.headerButton {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+div.menu-content {
+	z-index: 10;
+    position: fixed;
+    width: 75%;
+    right: -80%;
+    top: 60px;
+    background-color: rgba(225, 225, 225,0.9);
+    border-color: #5d5d5d;
+    border-style: solid;
+    display: none;
+    max-width: 20em;
+}
+
+li.menu-button{
+    height: 75px;
+    width: 100%;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #5d5d5d;
+}
+
+div.menu-content > ul {
+    margin: 0;
+}
+
+div.menu-content > ul > li {
+	margin-left: -2.8em;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    list-style: none;
+    font-weight: bold;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes open-menu {
+    from {right: -80%;}
+    to {right: 0;}
+}
+
+@keyframes open-menu {
+    from {right: -80%;}
+    to {right: 0;}
+}
+
+.menu-open {
+    -webkit-animation-name: open-menu; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    /* animation-name: open-menu;
+    animation-duration: 1s; */
+    right: 0 !important;
+    display: block !important;
+}
+
+.menu-close {
+    right: -80% !important;
+    display: none;
+}
+
+
+@keyframes menuButtonAnimationKF {
+    from {background-color: rgba(200,200,200,1);}
+    to {background-color: rgba(0,0,0,0);}
+}
+.menuButtonAnimation {
+    -webkit-animation-name: menuButtonAnimationKF; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    background-color: rgba(0,0,0,0)
+}
+
+div.div-exit-menu {
+	z-index: 9;
+    width:100%;
+    height:calc(100% - 30px);
+    top:30px;
+    position:fixed;
+    display:block
+}
+
+/* CUSTOM APP CSS */
+
+html, body {
+	background-color: #640;
+	color: #ddd
+}
+
+.best-score {
+	margin-left: 5px;
+	border-radius: 0px;
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 30px;
+	min-width: 18%;
+	text-align: center;
+}
+
+.score-container {
+	float: left;
+	border-radius: 0px;
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+	min-width: 18%;
+	text-align: center;
+}
+
+.game-container {
+	color: #640
+}
+
+.score-addition {
+	color: #640 !important;
+}
+
+.game-intro a {
+	visibility:hidden;
+}
+
+.grid-cell, .game-container, .tile {
+	border-radius: 30px;
+}
+
+.tile {
+	line-height: 4rem;
+}
